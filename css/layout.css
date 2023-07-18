@@ -64,14 +64,11 @@ li:hover .globalbox {
     font-size: 1.5rem;
 }
 
-.globala i:nth-child(2), /*아시아 지도 원래 안보임*/
-li:hover .globala i:nth-child(1) /*마우스 올라가면 망사지구 사라짐*/
+
+li:hover .globala i::before
 {
-    display: none;
+    content: "\F883";
+
 }
 
-li:hover i:nth-child(2), /*마우스 올라가면 아시아 지도 나타남*/
-.globala i:nth-child(1) /*망사지구 처음에 보임*/
-{
-    display: block;
-}
+
