@@ -61,4 +61,17 @@ li:hover .globalbox {
     display: block;
     /* 인라인태그 a라서 위아래 스타일 안먹혀 */
     padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.globala i:nth-child(2), /*아시아 지도 원래 안보임*/
+li:hover .globala i:nth-child(1) /*마우스 올라가면 망사지구 사라짐*/
+{
+    display: none;
+}
+
+li:hover i:nth-child(2), /*마우스 올라가면 아시아 지도 나타남*/
+.globala i:nth-child(1) /*망사지구 처음에 보임*/
+{
+    display: block;
 }
